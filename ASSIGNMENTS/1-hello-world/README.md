@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Next.js 13 Hello World
+Download and Install Node.js LTS Version
 
-## Getting Started
+Download and Install VS Code
 
-First, run the development server:
+Check out the Next.js 13 Installation Docs
 
-```bash
+Create a new Folder
+
+Open the Command Line (Terminal) and run this command:
+
+npx create-next-app .
+this will create a Next.Js project
+
+The app directory is where you define routes, create UI and colocate files such as components, tests, or stylesheets.
+
+Read the following React Documentation:
+
+React Essentials
+
+Note: Our file extension is not jsx but tsx because we are using TypeScript
+
+In the app/page.tsx file delete the previous React component and replace it with the following simple hello world component:
+export default function Home() {
+  return (
+        <div>Hello World</div>
+  );
+}
+We wrote a very simple hello world React component in the file. Note that it is a convention in Next.js that the html page in the director is called page.tsx
+
+Start the development Server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 with your browser to see the results locally.
