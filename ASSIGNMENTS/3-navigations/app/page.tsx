@@ -1,4 +1,5 @@
-"use client";
+"use client";                                    // class-3     // Assignment
+
 import Link from "next/link";
 import { useRouter } from "next/navigation"
 import React from "react";
@@ -75,6 +76,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// class-3
-// assignment 
