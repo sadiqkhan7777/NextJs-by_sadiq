@@ -36,7 +36,9 @@ const Navbar = () => {
       <Link href="/contact">
         <h2 className="underline cursor-pointer">Go To Contact</h2>
       </Link>
+      <br />
       <Link href="/about">
+      <br />
         <h2 className="underline cursor-pointer">Go To Footer</h2>
       </Link>
     </div>

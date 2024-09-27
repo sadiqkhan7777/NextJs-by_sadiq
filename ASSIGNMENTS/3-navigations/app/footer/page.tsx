@@ -28,6 +28,10 @@ const Footer = () => {
         <h2 className="underline cursor-pointer">Go To Navbar</h2>
       </Link>
       <br />
+      <Link href="/contact">
+        <h2 className="underline cursor-pointer">Go To Contact</h2>
+      </Link>
+      <br />
       <Link href="/about">
         <h2 className="underline cursor-pointer">Go To About</h2>
       </Link>

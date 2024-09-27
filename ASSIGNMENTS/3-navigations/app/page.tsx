@@ -1,5 +1,4 @@
-"use client";                                    // class-3     // Assignment
-
+"use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation"
 import React from "react";
@@ -11,12 +10,12 @@ const Home = () => {
         router.push("/navbar")
     };
 
-    const goToAbout = () => {
-        router.push("/about")
-    };
-
     const goToContact = () => {
         router.push("/contact")
+    };
+
+    const goToAbout = () => {
+        router.push("/about")
     };
 
     const goToFooter = () => {
@@ -30,14 +29,17 @@ const Home = () => {
         <h2>Go To Navbar</h2>
         </Link>
              <br />
-        <Link href={"/about"} > 
-        <h2>Go To About</h2> 
-        </Link>
-            <br />
+
         <Link href={"/contact"} > 
         <h2>Go To Contact</h2> 
         </Link>
             <br />
+
+            <Link href={"/about"} > 
+        <h2>Go To About</h2> 
+        </Link>
+            <br />
+
         <Link href={"/footer"} > 
         <h2>Go To Footer</h2> 
         </Link>
@@ -76,3 +78,4 @@ const Home = () => {
 };
 
 export default Home;
+
