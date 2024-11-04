@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #967676;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000000;
+ font-weight: bolder;
+ font-style: italic;
+}
+
+.student-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-card img {
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: #363131;
+}
+
+.student-card h2 {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #555;
+}
+
+.student-card p {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #777;
+}
