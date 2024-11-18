@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Resetting some default browser styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Applying a light gray background to the whole page */
+body {
+  background-color: #f2f5f7;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Centering the main container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Adding styles for the form */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Styling the form inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4f46e5;
+}
+
+/* Styling buttons with common properties */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific button styles for Add and Update actions */
+button.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+button.bg-blue-500:hover {
+  background-color: #2563eb;
+}
+
+button.bg-green-500 {
+  background-color: #10b981;
+}
+
+button.bg-green-500:hover {
+  background-color: #059669;
+}
+
+/* Adding styles for the Book List */
+.book-list {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.book-item:last-child {
+  border-bottom: none;
+}
+
+/* Styling for the book titles and authors */
+.book-item h4 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.book-item p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Styles for action buttons */
+button.bg-red-500 {
+  background-color: #ef4444;
+}
+
+button.bg-red-500:hover {
+  background-color: #dc2626;
+}
+
+/* Making the Edit and Delete buttons smaller and side by side */
+button.p-1 {
+  padding: 6px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* Adding a hover effect to the main container */
+.container:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
