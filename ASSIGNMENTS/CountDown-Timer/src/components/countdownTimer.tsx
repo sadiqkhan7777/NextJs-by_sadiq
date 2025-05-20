@@ -66,7 +66,6 @@ onChange={(e) => setTime(Number(e.target.value))}
     {remaingTime} secounds remaining
 </div>
 
-
 <div>
     <button
     onClick={handlestart}
@@ -101,12 +100,8 @@ Resume
     </button>
 
 </div>
-
-
-
     </div>
-)
-
+    )
 }
 
 export default CountdownTimer;
